@@ -1,3 +1,27 @@
 .features .glyphicon {
     font-size: 32px;
 }
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 210px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 210px;
+    background-color: #333;
+    color: #efefef;
+    padding: 30px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 300px;
+    }
+    .footer {
+        height: 300px;
+    }
+}
