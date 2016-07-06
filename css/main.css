@@ -1,10 +1,13 @@
 .features .glyphicon {
     font-size: 32px;
 }
+
 body {
     /* Margin bottom by footer height */
     margin-bottom: 210px;
 }
+
+
 .footer {
     position: absolute;
     bottom: 0;
