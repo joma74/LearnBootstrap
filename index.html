@@ -14,22 +14,27 @@
         <div class="navbar navbar-default navbar-static-top">
             <!-- keep nav in vertical line with the content -->
             <div class="container">
-                <!-- group header and navbar button on same row-->
+                <!-- div navbar-brand and navbar button on same row
+                     so that the nav will be on it's own row if on xs,
+                     but because of navbar-right will be float right
+                     if on sm or greater -->
                 <div class="navbar-header">
                     <a href='/' class='navbar-brand'>Blasting Off With Bootstrap</a>
                     <!-- navbar-toggle lets button show only shows on xs and sm.
                          Toggling collapsing of the navbar-nav -->
+                    <!-- @data-toggle the existence of a 'collapse' class ... -->
+                    <!-- ... @data-target on an element that has the class 'navbar-collapse'  -->
                     <button type="button" class="navbar-toggle"
-                            data-toggle='collapse'
-                            data-target='.navbar-collapse'>
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class='icon-bar'></span>
-                        <span class='icon-bar'></span>
-                        <span class='icon-bar'></span>
+                    data-toggle='collapse'
+                    data-target='.navbar-collapse'>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
                     </button>
                 </div>
-                <!-- nav is the nav part of a navbar.
-                navbar-nav adds a hoover state -->
+                <!-- class 'nav' is the nav part of a navbar.
+                class 'navbar-nav' adds a hoover state -->
                 <!-- collapse t.i. hidden if on xs or sm -->
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
                     <li><a href='tickets.html'>Tickets</a></li>
