@@ -5,6 +5,8 @@
 body {
     /* Margin bottom by footer height */
     margin-bottom: 210px;
+    /* Include Google font */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container{
