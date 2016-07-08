@@ -3,29 +3,39 @@
 }
 
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 220px;
     /* Include Google font */
     font-family: 'Open Sans', sans-serif;
 }
 
-.container{
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
     max-width: 960px;
+}
+
+.site-header, .site-footer {
+    flex: none;
 }
 
 /* To solve the Sticky Footer responsive problem, see
     - http://stackoverflow.com/questions/19756997/how-to-create-a-sticky-footer-that-plays-well-with-bootstrap-3/23833625#23833625
     - https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 */
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 220px;
+.site-footer {
     background-color: #333;
     color: #efefef;
     padding: 30px 0;
+}
+
+.site-content {
+    flex: 1 0 auto; /* 2 */
+    /* Fixes that buttons 'Take the...' and 'Book tick...' are on two lines
+    on sm or xs*/
+    padding: var(--space) var(--space) 0;
 }
 
 .lead {
@@ -34,14 +44,4 @@ body {
 
 .btn-lg {
     padding: 14px 20px;
-}
-
-@media only screen and (max-width: 768px) {
-    body {
-        /* Margin bottom by footer height */
-        margin-bottom: 300px;
-    }
-    .footer {
-        height: 300px;
-    }
 }
